@@ -1,0 +1,110 @@
+.footer {
+    background-color: black;
+    padding: 4rem 2rem;
+    color: white;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    
+  }
+  
+
+  
+  .logo {
+    width: 50px;
+    height: auto;
+  }
+  
+  .linksSection {
+    display: flex;
+    gap: 4rem;
+    flex-grow: 2;
+    justify-content: center;
+  }
+  
+  .column {
+    min-width: 120px;
+  }
+  
+  .columnTitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+  
+  .linksList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+  }
+  
+  .linksList li {
+    margin-bottom: 0.75rem;
+  }
+  
+  .linksList a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    position: relative;
+  
+  }
+  /* Nuevo efecto de línea blanca */
+.linksList a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.linksList a:hover::after {
+  width: 100%;
+}
+  
+ 
+  
+  /* Media queries para diseño responsive */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .linksSection {
+      flex-direction: column;
+      gap: 2rem;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .column {
+      width: 100%;
+      max-width: 300px;
+    }
+  
+    .logoSection {
+      margin-bottom: 2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer {
+      padding: 3rem 1rem;
+    }
+  
+    .linksSection {
+      gap: 1.5rem;
+    }
+  }
+  
+  
