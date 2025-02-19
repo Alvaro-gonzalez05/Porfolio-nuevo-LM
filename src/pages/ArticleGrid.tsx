@@ -42,7 +42,7 @@ const articles: Article[] = [
 
 export default function ArticleGrid() {
   return (
-    <div className="bodygrid">
+    <div className="bodygrid" id="jobs">
       <div className={styles.gridContainer}>
         {articles.map((article, index) => (
           <a key={index} href={article.href} className={`${styles.articleCard} ${styles[`article${index + 1}`]}`}>

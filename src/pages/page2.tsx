@@ -35,7 +35,7 @@ const skills = [
 
 const Page2 = () => {
   return (
-    <div className="page-container">
+    <div className="page-container" id="skills">
       <h1 className="page-title"><Fade direction="down">MY SKILLS</Fade></h1>
       <div className="skills-grid">
         {skills.map((skill, index) => (

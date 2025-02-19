@@ -48,7 +48,7 @@ export default function Carousel() {
     }, [current]); // El intervalo se reinicia cada vez que cambia "current"
   
     return (
-      <div className="carousel-container">
+      <div className="carousel-container" id="certificates">
         <motion.div
           key={current}
           initial={{ opacity: 0, x: 100 }}
