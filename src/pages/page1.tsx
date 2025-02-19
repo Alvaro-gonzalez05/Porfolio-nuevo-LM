@@ -1,6 +1,5 @@
-import React from 'react';
 import "../statics/page1.css"; // Verifica si la ruta es correcta
-import { Slide, Fade, Bounce } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 
 
 
@@ -10,14 +9,14 @@ const Page1 = () => {
     return (
         <div className='pagina1-body'>
             
-               <nav class="navbar">
+               <nav className="navbar">
                     
-                    <div class="logo"><Fade>UX UI DESIGNER</Fade></div>
-                    <input type="checkbox" id="menu-toggle" class="menu-toggle"/>
-                    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+                    <div className="logo"><Fade>UX UI DESIGNER</Fade></div>
+                    <input type="checkbox" id="menu-toggle" className="menu-toggle"/>
+                    <label htmlFor="menu-toggle" className="menu-icon">&#9776;</label>
                     
                     
-                    <ul class="nav-links">
+                    <ul className="nav-links">
                         <li><a href="#about">About Me</a></li>
                         <li><a href="#jobs">My Jobs</a></li>
                         <li><a href="#skills">Skills</a></li>

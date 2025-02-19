@@ -8,7 +8,7 @@ import imegen3 from "../assets/certificado-web.png";
 import certificado1 from "../assets/certificado1.png";
 import certificado2 from "../assets/certificado2.png";
 import certificado3 from "../assets/certificado3.png";
-import { Slide, Fade, Bounce } from "react-awesome-reveal";
+import { Slide, Fade } from "react-awesome-reveal";
 
 
 

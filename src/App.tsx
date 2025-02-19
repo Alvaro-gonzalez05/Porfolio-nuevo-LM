@@ -1,8 +1,8 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Page1 from "./pages/page1.jsx"; // Importación corregida
-import Page2 from "./pages/page2.jsx";
-import Carousel from "./pages/carrusel.jsx";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Page1 from "./pages/page1.tsx"; // Importación corregida
+import Page2 from "./pages/page2.tsx";
+import Carousel from "./pages/carrusel.tsx";
 import ArticleGrid from "./pages/ArticleGrid.tsx";
 import Footer from "./pages/footer.tsx";
 

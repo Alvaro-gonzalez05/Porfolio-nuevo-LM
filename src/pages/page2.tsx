@@ -1,10 +1,9 @@
-import React from "react";
 import "../statics/page2.css";
 import canvaIcon from "../assets/canva.png";
 import photoshopIcon from "../assets/photoshop.png";
 import illustratorIcon from "../assets/illustrator.png";
 import figmaIcon from "../assets/figma.png";
-import { Slide, Fade, Bounce } from "react-awesome-reveal";
+import { Fade, Bounce } from "react-awesome-reveal";
 
 
 const skills = [
