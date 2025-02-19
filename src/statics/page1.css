@@ -18,11 +18,7 @@ body {
 }
 
 
-.luciamiranda{
-  font-family: 'Outfit', sans-serif;
-  font-weight: 600; /* Semibold */
-  font-size: 10px;
-}
+
 .textohijo p{
   font-family: "Figtree";
   font-size: 20px;
@@ -55,8 +51,8 @@ body {
     list-style: none;
     display: flex;
     gap: 20px;
-    margin: 20px;
-    padding: 0;
+    padding: 0px;
+    margin-right: 20px;
   }
   
   .navbar .nav-links li {
@@ -149,6 +145,9 @@ body {
   
   /* Estilos para pantallas pequeñas */
   @media (max-width: 768px) {
+    .titulo-grande .linea {
+      font-size: 70px;
+    }
     
     .textohijo p{
       width: auto;
@@ -166,6 +165,7 @@ body {
       top: 60px; /* Debajo del navbar */
       left: 0;
       width: 100%;
+     
       border-radius: 30px;
       flex-direction: column;
       align-items: center;
