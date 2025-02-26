@@ -16,19 +16,19 @@ const slides = [
   {
     image: imagen1,
     title: "CERTIFICADO UI",
-    text: "aca iria una breve explicacion de cada cosa hecha ",
+    text: "I earned a UX Design certificate, learning to create intuitive, accessible, and responsive interfaces for optimal user experience.",
     certificado: certificado2
   },
   {
     image: imagen2,
     title: "CERTIFICADO PRODUCT ",
-    text: "Description of the second certificate.",
+    text: "I earned a Product Manager certificate, gaining skills in market research, roadmap planning, and agile strategies to enhance user experience and business goals.",
     certificado: certificado1
   },
   {
     image: imegen3,
     title: "CERTIFICADO DEV/WEB",
-    text: "Description of the third certificate.",
+    text: "I earned a certificate in web development focused on HTML, learning to build structured, interactive, and accessible web pages.",
     certificado:certificado3
   }
 ];

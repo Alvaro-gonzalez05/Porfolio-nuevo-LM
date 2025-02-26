@@ -5,12 +5,13 @@ import Page2 from "./pages/page2.tsx";
 import Carousel from "./pages/carrusel.tsx";
 import ArticleGrid from "./pages/ArticleGrid.tsx";
 import Footer from "./pages/footer.tsx";
+import CVU from "./pages/cvu.tsx";
 
 function App() {
   return (
     <Router>
         <Routes>
-          <Route path="/" element={<><Page1 /><Page2/><Carousel/><ArticleGrid/><Footer/> </>}  />
+          <Route path="/" element={<><Page1 /><Page2/><Carousel/><ArticleGrid/><CVU/><Footer/> </>}  />
         </Routes>
     </Router>
   );
