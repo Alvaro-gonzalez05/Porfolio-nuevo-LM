@@ -63,7 +63,7 @@ export default function Carousel() {
         <div className="textcontent">
             <Slide direction="right"><h2 className="carousel-title">{slides[current].title}</h2></Slide>
             <Slide direction="right"><p className="carousel-text">{slides[current].text}</p></Slide >
-            <Slide direction="right"><button className="carousel-button" onClick={() => setIsOpen(true)}>See</button></Slide>
+            <Slide direction="right"><button className="carousel-button" onClick={() => setIsOpen(true)}>SEE</button></Slide>
         </div>  
           
         </motion.div>

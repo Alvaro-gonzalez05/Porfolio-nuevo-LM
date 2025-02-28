@@ -4,7 +4,7 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background: linear-gradient(45deg, #000000, #222222, #444444, #555555);
+    background: #1a1a1a;
     color: white;
     padding-bottom: 30px;
   }
@@ -58,15 +58,20 @@
     margin-bottom: 20px;
     width: 500px;
     text-align: center;
+    color: #a0a0a0;
   }
   
   .carousel-button {
-    background-color: #007bff;
+  
     color: white;
-    border: none;
+    border: 1px solid white;
+   
     padding: 10px 20px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 30px;
+  }
+  .carousel-button:hover{
+    background-color: #333333;
   }
   
   .carousel-arrow {

@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree&display=swap');
 
 .pagina1-body{
-    background: linear-gradient(45deg, #000000, #222222, #444444, #555555);
+    background: #1a1a1a;
     width: 100vw;
     height: 100vh;
     color: white; /* Color del texto dentro del div */
