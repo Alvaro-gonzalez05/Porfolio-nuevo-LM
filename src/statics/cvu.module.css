@@ -32,8 +32,6 @@
     display: flex;
    align-items: center;
    justify-content: center;
-  
-
     padding: 50px;
     width: 400px;
     
@@ -43,8 +41,8 @@
   }
   .titulo2{
     
-    top: 5px;
-    font-size: 80px;
+    
+    font-size: 65px;
     font-weight: bold;
     color: white;
     border-radius: 15px;
@@ -139,62 +137,15 @@
     background-color: #5a9e49;
   }
 
-  /* Telefonos grandes */
-  @media (max-width: 450px) and (min-width:399px) {
-    .CVU{
-      width: auto;
-      transform: translateY(520px);
-    }
-    .CVU h1{
-      
-      font-size: 35px;
-      transform: translateX(-340px);
-      
-    }
+  @media (max-width: 768px){
     .container1{
-      
-      display: flex;
-      flex-wrap: wrap;
-      
+      flex-direction: column;
     }
-   
-   .pie{
-    transform: translateX(-350px);
-    
-   }
-   #certificados1{
-    margin-right: 700px;
-    }
-  }
-  
-  
-  /* Telefonos Normales */
-  @media (max-width: 399px) and (min-width:300px){
     .CVU{
-      width: auto;
-      transform: translateY(680px);
-      
+      flex-direction: row;
+      height: auto;
     }
-    .CVU h1{
-      
-      font-size: 30px;
-      transform: translateX(-330px);
+    .titulo2{
+      font-size: 40px;
     }
-    .container1{
-      
-      
-     
-      padding: 0;
-      display: flex;
-      flex-wrap: wrap;
-     margin-left: 35px;
-      
-    }
-    .pie{
-      transform: translateX(-330px);
-      
-     }
-     #certificados1{
-      margin-right: 700px;
-      }
   }
