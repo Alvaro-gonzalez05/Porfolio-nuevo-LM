@@ -6,6 +6,7 @@ import elsitio from "../assets/elsitio.jpg"
 import wine from "../assets/wine.jpg"
 import sophie from "../assets/sophie.jpg"
 import sunne from "../assets/sunne.jpg"
+import { Bounce } from "react-awesome-reveal"
 
 const projects = [
   {
@@ -81,7 +82,7 @@ export default function PortfolioGrid() {
 
         <div className={`portfolio-grid ${animateItems ? "fade-in" : "fade-out"}`}>
           {filteredProjects.map((project) => (
-            <div key={project.id} className="portfolio-item">
+            <Bounce><div key={project.id} className="portfolio-item">
               <div className="portfolio-image-container">
                 <img src={project.imageUrl || "/placeholder.svg"} alt={project.title} className="portfolio-image" />
                 <div className="portfolio-overlay">
@@ -108,7 +109,7 @@ export default function PortfolioGrid() {
                   </svg>
                 </a>
               </div>
-            </div>
+            </div></Bounce>
           ))}
         </div>
       </div>
