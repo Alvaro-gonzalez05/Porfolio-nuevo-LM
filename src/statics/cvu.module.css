@@ -60,7 +60,7 @@
   }
   .card .card__image2 {
     flex: 1;
-    height: 200px;
+    height: 250px;
    
     
 
@@ -69,13 +69,15 @@
   .card:nth-child(1) .card__image1 {
    background-image: url(../assets/español.png);
     background-size: cover;
+    background-position: center;
     
   }
 
   
-  .card:nth-child(2) .card__image1 {
+  .card .card__image2 {
     background-image: url(../assets/english.png);
     background-size: cover;
+    background-position: center;
   }
 
   
@@ -96,6 +98,7 @@
   .card .card__content .card__describe {
     color: #fff;
     font-size: 16px;
+    text-align: center;
   }
 
   .button1 {

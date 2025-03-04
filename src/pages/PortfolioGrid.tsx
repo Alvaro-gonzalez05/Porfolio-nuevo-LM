@@ -6,7 +6,7 @@ import elsitio from "../assets/elsitio.jpg"
 import wine from "../assets/wine.jpg"
 import sophie from "../assets/sophie.jpg"
 import sunne from "../assets/sunne.jpg"
-import { Bounce } from "react-awesome-reveal"
+import { Bounce,Fade,Slide } from "react-awesome-reveal"
 
 const projects = [
   {
@@ -65,10 +65,10 @@ export default function PortfolioGrid() {
   return (
     <section className="portfolio-section">
       <div className="container">
-        <h2 className="section-title">MY WORKS</h2>
-        <p className="section-description">A showcase of our minimalist designs and creative solutions.</p>
+        <Fade><h2 className="section-title">MY WORKS</h2></Fade>
+        <Fade><p className="section-description">A showcase of our minimalist designs and creative solutions.</p></Fade>
 
-        <div className="filter-buttons">
+        <Slide direction="left"><div className="filter-buttons">
           {categories.map((category) => (
             <button
               key={category}
@@ -78,7 +78,7 @@ export default function PortfolioGrid() {
               {category}
             </button>
           ))}
-        </div>
+        </div></Slide>
 
         <div className={`portfolio-grid ${animateItems ? "fade-in" : "fade-out"}`}>
           {filteredProjects.map((project) => (

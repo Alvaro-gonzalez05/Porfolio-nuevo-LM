@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from "react"
 import "../statics/timeline.css"
+import { Fade } from "react-awesome-reveal";
 
 const timelineEvents = [
   {
@@ -86,8 +87,8 @@ export default function Timeline() {
   return (
     <section className="timeline-section">
       <div className="container">
-        <h2 className="section-title">MY JOURNEY</h2>
-        <p className="section-description">The evolution of our creative agency through the years</p>
+        <Fade><h2 className="section-title">MY JOURNEY</h2></Fade>
+        <Fade><p className="section-description">The evolution of our creative agency through the years</p></Fade>
 
         <div className="timeline-container" ref={timelineRef}>
           <div className="timeline-line"></div>
@@ -103,14 +104,14 @@ export default function Timeline() {
                 <div className="timeline-dot"></div>
               </div>
               <div className="timeline-content" onClick={() => toggleEvent(index)}>
-                <div className="timeline-card">
+                <Fade><div className="timeline-card">
                   <span className="timeline-year">{event.year}</span>
                   <h3 className="timeline-title">{event.title}</h3>
                   <p className="timeline-description">{event.description}</p>
                   <div className={`timeline-details ${expandedEvent === index ? "expanded" : ""}`}>
                     <p>{event.details}</p>
                   </div>
-                </div>
+                </div></Fade>
               </div>
             </div>
           ))}
