@@ -1,13 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Figtree&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Figtree&display=swap");
 
-.pagina1-body{
-    background: #1a1a1a;
-    width: 100vw;
-    height: 100vh;
-    color: white; /* Color del texto dentro del div */
-    
-    
+.pagina1-body {
+  background: #1a1a1a;
+  width: 100vw;
+  height: 100vh;
+  color: white; /* Color del texto dentro del div */
 }
 body {
   overflow-x: hidden;
@@ -17,212 +15,337 @@ body {
   box-sizing: border-box;
 }
 
-
-
-.textohijo p{
+.textohijo p {
   font-family: "Figtree";
   font-size: 20px;
-  width: 500px;
+  width: 700px;
   height: auto;
   padding: 10px;
-  color: #C9BBD0;
+  color: #c9bbd0;
+  
 }
 .titulo-grande .linea {
-    display: block; /* Cada span se muestra en una línea nueva */
-    font-size: 90px;
-  }
+  display: block; /* Cada span se muestra en una línea nueva */
+  font-size: 90px;
+}
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-   
-    color: white;
-    height: 60px;
-    
-  }
-  
-  .navbar .logo {
-    font-size: 1.5rem;
-    font-weight:lighter;
-    margin-left: 50px;
-  }
-  
-  .navbar .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    padding: 0px;
-    margin-right: 20px;
-  }
-  
-  .navbar .nav-links li {
-    position: relative;
-  }
-  
-  .navbar .nav-links a {
-    text-decoration: none;
-    color: white;
-    font-size: 1rem;
-    padding: 10px 15px; /* Padding fijo para evitar cambios de tamaño */
-    transition: all 0.5s ease; /* Transición más lenta */
-    position: relative;
-    overflow: hidden; /* Para contener el pseudo-elemento */
-    display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    animation: upDown 2s ease;
-  }
-  
-  /* Línea inferior en hover */
-  .navbar .nav-links a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 2px;
-    background-color: white;
-    transform: scaleX(0); /* Inicialmente invisible */
-    transform-origin: bottom right;
-    transition: transform 0.3s ease;
-  }
-  
-  .navbar .nav-links a:hover::after {
-    transform: scaleX(1); /* Línea visible */
-    transform-origin: bottom left;
-  }
-  
-  /* Fondo completo al hacer clic */
-  .navbar .nav-links a:active {
-    color: black;
-    transition: color 0.5s ease; /* Transición más lenta para el color */
-  }
-  
-  .navbar .nav-links a:active::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    z-index: -1; /* Coloca el fondo detrás del texto */
-    transform: scaleY(0); /* Inicialmente invisible */
-    transform-origin: bottom;
-    transition: transform 0.5s ease; /* Transición más lenta */
-  }
-  
-  .navbar .nav-links a:active::before {
-    transform: scaleY(1); /* Fondo visible */
-  }
-  /* Menú responsive */
+  color: white;
+  height: 60px;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  margin-left: 50px;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0px;
+  margin-right: 20px;
+}
+
+.navbar .nav-links li {
+  position: relative;
+}
+
+.navbar .nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 15px; /* Padding fijo para evitar cambios de tamaño */
+  transition: all 0.5s ease; /* Transición más lenta */
+  position: relative;
+  overflow: hidden; /* Para contener el pseudo-elemento */
+  display: inline-block;
+
+  animation: upDown 2s ease;
+}
+
+/* Línea inferior en hover */
+.navbar .nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  transform: scaleX(0); /* Inicialmente invisible */
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+.navbar .nav-links a:hover::after {
+  transform: scaleX(1); /* Línea visible */
+  transform-origin: bottom left;
+}
+
+/* Fondo completo al hacer clic */
+.navbar .nav-links a:active {
+  color: black;
+  transition: color 0.5s ease; /* Transición más lenta para el color */
+}
+
+.navbar .nav-links a:active::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: -1; /* Coloca el fondo detrás del texto */
+  transform: scaleY(0); /* Inicialmente invisible */
+  transform-origin: bottom;
+  transition: transform 0.5s ease; /* Transición más lenta */
+}
+
+.navbar .nav-links a:active::before {
+  transform: scaleY(1); /* Fondo visible */
+}
+/* Menú responsive */
 .menu-toggle {
-    display: none; /* Oculta el checkbox */
-  }
-  
-  .menu-icon {
-    display: none; /* Oculta el ícono de menú por defecto */
-    font-size: 1.5rem;
-    cursor: pointer;
+  display: none; /* Oculta el checkbox */
+}
+
+.menu-icon {
+  display: none; /* Oculta el ícono de menú por defecto */
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.texto1 {
+  margin-top: 10vh;
+  padding: 50px;
+  width: auto;
+  animation: slideInFromLeft 1s ease;
+}
+.contact-me-btn {
+  font-family: "Figtree";
+  background-color: white;
+  color: #000000;
+  transition: transform 0.3s ease;
+}
+.contact-me-btn:hover {
+  transform: translateY(-7px);
+}
+
+/* Dialog styles */
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(3px);
+}
+
+.dialog-content {
+  background-color: #2a2a2a;
+  border-radius: 15px;
+  padding: 30px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dialog-content h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #e0e0e0;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.05);
+  color: white;
+  font-family: inherit;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: white;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.cancel-btn,
+.submit-btn {
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cancel-btn {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.cancel-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.submit-btn {
+  background-color: white;
+  color: black;
+  border: 1px solid white;
+}
+
+.submit-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+.submit-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.success-message {
+  text-align: center;
+  padding: 20px;
+  color: #4caf50;
+  font-size: 18px;
+}
+
+.error-message {
+  color: #f44336;
+  margin-top: 15px;
+  text-align: center;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .titulo-grande .linea {
+    font-size: 70px;
   }
 
-  .texto1{
-    margin-top: 10vh;
-    padding: 50px;
+  .textohijo p {
     width: auto;
-    animation: slideInFromLeft 1s ease;
   }
-  .see{
-    font-family: "Figtree";
-    background-color: white;
-    color: #000000;
-    transition: transform 0.3s ease ;
+  .texto1 {
+    padding: 10px;
   }
-  .see:hover{
-    transform: translateY(-10px);
-    
+  .menu-icon {
+    display: block; /* Muestra el ícono de menú en pantallas pequeñas */
+    margin-right: 25px;
   }
 
-  
-  /* Estilos para pantallas pequeñas */
-  @media (max-width: 768px) {
-    .titulo-grande .linea {
-      font-size: 70px;
-    }
-    
-    .textohijo p{
-      width: auto;
-    }
-    .texto1{
-      padding:10px ;
-    }
-    .menu-icon {
-      display: block; /* Muestra el ícono de menú en pantallas pequeñas */
-      margin-right: 25px;
-    }
-  
-    .nav-links { 
-      position: absolute;
-      top: 60px; /* Debajo del navbar */
-      left: 0;
-      width: 100%;
-     
-      
-      flex-direction: column;
-      align-items: center;
-      gap: 0;
-      background:#1a1a1a ;
-      max-height: 0; /* Oculta el menú inicialmente */
-      overflow: hidden;
-      transition: max-height 0.5s ease;
-      
-    }
-  
-    .nav-links li {
-      width: 100%;
-      text-align: center;
-    }
-  
-    .nav-links a {
-      padding: 15px 0;
-      width: 100%;
-      display: block;
-    }
-  
-    /* Muestra el menú cuando el checkbox está marcado */
-    .menu-toggle:checked ~ .nav-links {
-      max-height: 300px; /* Altura máxima del menú desplegado */
-    }
+  .nav-links {
+    position: absolute;
+    top: 60px; /* Debajo del navbar */
+    left: 0;
+    width: 100%;
+
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    background: #1a1a1a;
+    max-height: 0; /* Oculta el menú inicialmente */
+    overflow: hidden;
+    transition: max-height 0.5s ease;
   }
 
-  @keyframes slideInFromLeft {
-    0% {
-        transform: translateX(-100%); /* Empieza fuera de la pantalla (izquierda) */
-        opacity: 0; /* Opcional: Hacerlo transparente al inicio */
-    }
-    100% {
-        transform: translateX(0); /* Termina en su posición original */
-        opacity: 1; /* Opcional: Hacerlo completamente visible al final */
-    }
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links a {
+    padding: 15px 0;
+    width: 100%;
+    display: block;
+  }
+
+  /* Muestra el menú cuando el checkbox está marcado */
+  .menu-toggle:checked ~ .nav-links {
+    max-height: 300px; /* Altura máxima del menú desplegado */
+  }
+
+  .dialog-content {
+    padding: 20px;
+    width: 95%;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%); /* Empieza fuera de la pantalla (izquierda) */
+    opacity: 0; /* Opcional: Hacerlo transparente al inicio */
+  }
+  100% {
+    transform: translateX(0); /* Termina en su posición original */
+    opacity: 1; /* Opcional: Hacerlo completamente visible al final */
+  }
 }
 @keyframes upDown {
   0% {
-      transform: translateY(-100%);
+    transform: translateY(-100%);
   }
   50% {
-      transform: translateY(5px);
+    transform: translateY(5px);
   }
   100% {
-      transform: translateY(0);
+    transform: translateY(0);
   }
 }
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-      transform: translateY(0);
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
   }
   40% {
-      transform: translateY(-10px);
+    transform: translateY(-10px);
   }
   60% {
-      transform: translateY(-5px);
+    transform: translateY(-5px);
   }
 }
+

@@ -6,49 +6,31 @@ import { Fade } from "react-awesome-reveal";
 
 const timelineEvents = [
   {
-    year: 2018,
-    title: "Flowers & Saints Founded",
-    description: "Our journey began with a passion for minimal design and floral artistry.",
-    details:
-      "Founded by Jane Doe and John Smith, Flowers & Saints started as a small studio in Sydney's Surry Hills, combining their love for minimalist design and botanical beauty.",
+    "year": "2020-2021",
+    "title": "Discovery and Learning",
+    "description": "I started my journey in UX/UI. I discovered the field by watching YouTube videos and tutorials, which captivated me and provided a solid foundation.",
+    "details": "I explored UX/UI design through online resources, learning about user experience principles, wireframing, and prototyping. Experimenting with tools like Figma and Adobe XD, I created my first projects and built a strong foundation."
   },
   {
-    year: 2019,
-    title: "First Major Exhibition",
-    description: "Showcased our unique blend of digital art and floral arrangements at the Sydney Design Festival.",
-    details:
-      "Our exhibition 'Digital Bloom' attracted over 10,000 visitors and received critical acclaim for its innovative approach to merging technology with natural elements.",
+    "year": "2022-2023",
+    "title": "Freelance Beginnings",
+    "description": "I began working as a freelancer in UX/UI projects, enjoying the work and experiencing significant success in the field.",
+    "details": "I took on my first freelance projects, applying my knowledge to real-world designs. Working with clients helped me refine my skills, improve communication, and understand industry expectations."
   },
   {
-    year: 2020,
-    title: "Launch of Online Store",
-    description: "Expanded our reach by bringing our creations to the digital world.",
-    details:
-      "In response to global changes, we pivoted to e-commerce, offering our unique designs and virtual floral workshops to a worldwide audience.",
+    "year": "2024",
+    "title": "Continued Education",
+    "description": "I committed to expanding my expertise by taking courses in UX/UI, Product Management, UX Writing, and Web Development to further develop my skills.",
+    "details": "I deepened my knowledge through specialized courses, improving my understanding of design strategy, usability testing, and development principles to enhance my UX/UI expertise."
   },
   {
-    year: 2021,
-    title: "Collaboration with Top Brands",
-    description: "Partnered with leading lifestyle brands to create exclusive collections.",
-    details:
-      "Our collaborations included limited edition prints with Australian fashion label Zimmermann and a bespoke fragrance line with Aesop.",
-  },
-  {
-    year: 2022,
-    title: "International Recognition",
-    description: "Received the prestigious International Floral Design Award.",
-    details:
-      "Our 'Ethereal Echoes' installation, which combined holographic projections with live flowers, won the gold medal at the Chelsea Flower Show.",
-  },
-  {
-    year: 2023,
-    title: "Expansion to Physical Stores",
-    description: "Opened our first flagship store in the heart of Sydney.",
-    details:
-      "Our Bondi Beach location features an immersive retail experience, blending digital installations with a curated selection of floral arrangements and lifestyle products.",
-  },
-  // ... (resto de los eventos)
+    "year": "2025",
+    "title": "Professional Consolidation",
+    "description": "Currently, I am pursuing a diploma in UX/UI Design with the goal of deepening my knowledge and dedicating myself to this field full-time.",
+    "details": "Enrolled in a UX/UI diploma program, I am honing advanced design skills and preparing to transition into a full-time professional role, focusing on creating impactful digital experiences."
+  }
 ]
+
 
 export default function Timeline() {
   const [expandedEvent, setExpandedEvent] = useState<number | null>(null)
